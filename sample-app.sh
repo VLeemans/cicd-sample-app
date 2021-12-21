@@ -1,9 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-$WORKING_DIR=tempdir
-if [ -d "$WORKING_DIR" ]; then rm -Rf $WORKING_DIR; fi
-
+rm -rf tempdir
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
